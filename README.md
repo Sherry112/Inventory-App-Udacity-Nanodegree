@@ -10,3 +10,4 @@ This is the final project for the Android Basics Nanodegree Program. The concept
 The project rubric is: https://review.udacity.com/#!/rubrics/163/view
 
 # Preview
+![Alt Preview](https://github.com/Sherry112/Inventory-App-Udacity-Nanodegree/blob/master/Inventory.png)
