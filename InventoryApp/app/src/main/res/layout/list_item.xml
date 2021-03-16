@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout for a single list item in the list of pets -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/activity_margin"
+    android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/description_list"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:descendantFocusability="blocksDescendants">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/book_name"
+        style="@style/BookName"
+        tools:text="Name"
+        android:paddingBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/price_unit"
+        style="@style/ListItemStyle"
+        android:paddingRight="@dimen/margin"
+        android:layout_alignParentRight="true"
+        tools:text="50USD"/>
+</RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/book_quantity"
+            style="@style/ListItemStyle"
+            android:layout_below="@id/price_unit"
+            tools:text="Quantity Ordered: 5" />
+
+        <TextView
+            android:id="@+id/book_supplier_name"
+            style="@style/ListItemStyle" />
+
+        <TextView
+            android:id="@+id/book_supplier_number"
+            style="@style/ListItemStyle" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:text="@string/sale_button" />
+</LinearLayout>
